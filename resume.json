@@ -1,0 +1,256 @@
+{
+    "basics": {
+        "name": "Jenny Yan",
+        "email": "jen.yan417@gmail.com",
+        "phone": "973-610-5193"
+    },
+    "education": [
+        {
+            "institution": "University of North Texas Health Science Center (UNTHSC) – Fort Worth, TX",
+            "area": "Physician Assistant Studies",
+            "studyType": "Master",
+            "endDate": "2026-02-01",
+            "score": "3.973",
+            "courses": [
+                "Dean’s List (2023, 2024)"
+            ]
+        },
+        {
+            "institution": "Northeastern University – Boston, MA",
+            "area": "Behavioral Neuroscience",
+            "studyType": "Bachelor of Science",
+            "endDate": "2021-08-01",
+            "score": "3.987",
+            "courses": [
+                "Summa Cum Laude",
+                "Honors Program",
+                "Northeastern National Merit Scholarship (2017–2021)",
+                "Dean’s List (2017–2021)",
+                "Nu Rho Psi National Neuroscience Honor Society"
+            ]
+        }
+    ],
+    "work": [
+        {
+            "name": "The Lung and Sleep Center of North Texas",
+            "location": "North Richland Hills, TX",
+            "position": "Clinical Rotation, Pulmonary/Sleep Medicine",
+            "description": "130 hours",
+            "highlights": [
+                "Evaluated and managed common chief complaints such as shortness of breath, chronic cough, pulmonary nodules, and hypersomnia, as well as COPD, asthma, interstitial lung disease, and obstructive sleep apnea",
+                "Interpreted diagnostic tests including pulmonary function tests, chest CT and radiographs, pleural fluid analysis",
+                "Gained exposure to the management of critically ill and hemodynamically unstable patients requiring mechanical ventilation and vasopressor support in the intensive care unit"
+            ]
+        },
+        {
+            "name": "Texas Health Care",
+            "position": "Clinical Rotation, Women’s Health",
+            "location": "Fort Worth, TX",
+            "description": "153 hours",
+            "highlights": [
+                "Assessed common complaints, including breast mass, abnormal uterine bleeding, dyspareunia, pelvic pain, and perimenopause for a diverse patient population, ranging from young adult to geriatric",
+                "Counseled patients on gynecologic preventative care during Well Woman exams and on routine prenatal care during obstetrics visits",
+                "Measured fundal height and doppler heart tones, and assisted with in-office procedures (subcutaneous hormone pellet implantation, colposcopy, IUD insertion, LEEP) and surgery (Cesarean section, LAVH)"
+            ]
+        },
+        {
+            "name": "JPS Health",
+            "position": "Clinical Rotation, Psychiatry",
+            "location": "Fort Worth, TX",
+            "description": "131 hours",
+            "highlights": [
+                "Constructed treatment plans for patients with schizophrenia and mood disorders in a locked long-term care unit, utilizing findings from extensive chart review, patient interviews, and mental status exams",
+                "Evaluated and dispositioned patients in the psychiatric emergency department with chief complaints such as suicidal ideation/attempt, acute psychosis, and acute mania",
+                "Developed fund of knowledge through self-guided research of neuroleptic malignant syndrome, catatonia, and schizophrenia management"
+            ]
+        },
+        {
+            "name": "Texas Health Harris Methodist Hospital",
+            "position": "Clinical Rotation, Emergency Medicine",
+            "location": "Fort Worth, TX",
+            "description": "148 hours",
+            "highlights": [
+                "Gained exposure to the acute care of critically ill patients in a Level 1 Trauma Center and one of the busiest emergency departments in the country",
+                "Assessed patients with a diverse array of acuity levels (ESI 2 to 4) and chief complaints, including altered mental status, falls and motor vehicle collisions, chest pain, abdominal pain, headache, and back pain",
+                "Performed and assisted with procedures including laceration repair, splinting, and fascia iliaca nerve block"
+            ]
+        },
+        {
+            "name": "SkinMD",
+            "position": "Clinical Rotation, Dermatology",
+            "location": "Weatherford, TX",
+            "description": "117 hours",
+            "highlights": [
+                "Conducted full body skin exams to screen for skin cancer, including use of dermatoscope",
+                "Performed and assisted with cryotherapy, local infiltration, shave biopsy, surgical excision, incision & drainage",
+                "Educated patients regarding wound care, sun protection, and common conditions such as actinic keratoses, seborrheic keratoses, melanocytic nevi, acne, and skin cancer"
+            ]
+        },
+        {
+            "name": "Texas Health Care",
+            "position": "Clinical Rotation, General Surgery",
+            "location": "Fort Worth, TX",
+            "description": "138 hours",
+            "highlights": [
+                "Assisted surgeon in robot-assisted, laparoscopic, and open procedures, including closing incisions",
+                "Gained exposure to pre- and post-operative care of patients in the clinic setting, evaluating patients for surgical management of inguinal hernia, ventral/incisional hernia, hiatal hernia, intraabdominal masses, skin and subcutaneous masses, biliary diseases"
+            ]
+        },
+        {
+            "name": "Creekside Family Practice",
+            "position": "Clinical Rotation, Family Medicine",
+            "location": "Cypress, TX",
+            "description": "162 hours",
+            "highlights": [
+                "Obtained histories and performed physical exams for up to 13 patients/day in a fast-paced outpatient clinic serving a diverse patient population",
+                "Educated patients on disease management and prevention, especially emphasizing preventive health screenings and lifestyle modifications for chronic cardiovascular diseases, obesity, and diabetes mellitus"
+            ]
+        },
+        {
+            "name": "Center for Neurology and Neurophysiology",
+            "position": "Clinical Rotation, Neurology",
+            "location": "Frisco, TX",
+            "description": "145 hours",
+            "highlights": [
+                "Evaluated common complaints including headache, neuropathy, vestibular disorders, memory loss, and concussion, utilizing findings from comprehensive history-taking and physical exams",
+                "Observed chemodenervation injections and nerve blocks for the treatment of refractory headaches and neuromuscular disorders"
+            ]
+        },
+        {
+            "name": "John Peter Smith Hospital",
+            "position": "Clinical Rotation, Internal Medicine",
+            "location": "Fort Worth, TX",
+            "description": "154 hours",
+            "highlights": [
+                "Evaluated and managed up to 3 patients per shift in a diverse, community hospital setting, with complex cases including decompensated cirrhosis, sepsis, acute heart failure, substance use, acute encephalopathy",
+                "Presented cases in daily rounds to a team of 1 attending physician, 1 senior resident, 2 interns, and 2 medical students"
+            ]
+        },
+        {
+            "name": "Baylor Scott & White Cardiovascular Consultants",
+            "position": "Clinical Rotation, Cardiology",
+            "location": "Roanoke, TX",
+            "description": "138 hours",
+            "highlights": [
+                "Developed skills to manage patients with complex cardiovascular histories, including those with prior PCI or CABG, valve repair, pacemaker, and those requiring anticoagulation, antiarrhythmic drugs",
+                "Gained proficiency in interpreting electrocardiograms",
+                "Counseled patients on lifestyle interventions and medication management of prevalent cardiac conditions including atrial fibrillation, heart failure, hypertension, hyperlipidemia, coronary artery disease"
+            ]
+        },
+        {
+            "name": "Center for Academic Performance, UNTHSC",
+            "position": "CAP Tutor",
+            "location": "Fort Worth, TX",
+            "startDate": "2024-11-01",
+            "highlights": [
+                "Provided one-to-one tutoring for first- and second-year PA students in Neuroanatomy and Dermatology, emphasizing active learning through teach-back and practice questions"
+            ]
+        },
+        {
+            "name": "Atrius Health",
+            "position": "Medical Assistant I, Internal Medicine",
+            "location": "Boston, MA",
+            "startDate": "2021-07-01",
+            "endDate": "2022-08-01",
+            "highlights": [
+                "Assisted physicians with rooming and intake, seeing up to 25 patients per day in a fast-paced clinic setting",
+                "Performed point-of-care tests including urinalysis, rapid strep, urine pregnancy test, and EKG"
+            ]
+        },
+        {
+            "name": "Bouvé College of Health Sciences, Northeastern University",
+            "position": "Teaching Assistant",
+            "location": "Boston, MA",
+            "startDate": "2021-04-01",
+            "endDate": "2021-06-01",
+            "highlights": [
+                "Guided first-year Doctor of Physical Therapy students in identifying anatomical structures of the skull, brain, and spinal cord on models, human cadavers, and images of cross-sectional slices",
+                "Led virtual recitations in preparation for exams"
+            ]
+        },
+        {
+            "name": "Boston Health Care for the Homeless Program",
+            "position": "Medical Assistant, Outpatient Clinic",
+            "location": "Boston, MA",
+            "startDate": "2020-01-01",
+            "endDate": "2021-06-01",
+            "highlights": [
+                "Cared for a diverse patient population, including individuals who were uninsured, non-English speaking, non-citizen status, unhoused, with high burden of psychiatric and substance use disorders",
+                "Monitored patients who were sedated or at risk of overdose"
+            ]
+        },
+        {
+            "name": "Boston Children’s Hospital",
+            "position": "Clinical Assistant, Inpatient Neurology/Neurosurgery",
+            "location": "Boston, MA",
+            "startDate": "2019-01-01",
+            "endDate": "2019-12-01",
+            "highlights": [
+                "Provided basic nursing care for pediatric patients with complex neurological and developmental disorders in a 33-bed inpatient unit, responsible for 6-12 patients per shift",
+                "Monitored patients with behavioral, seizure, fall, and other safety risks as a one-to-one sitter"
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Beautiful Feet Ministries Medical Clinic",
+            "position": "Volunteer",
+            "startDate": "2024"
+        },
+        {
+            "organization": "Seniors Assisting Geriatric Education (SAGE)",
+            "position": "Volunteer",
+            "startDate": "2024"
+        },
+        {
+            "organization": "Black Men in White Coats Youth Summit",
+            "position": "Volunteer",
+            "startDate": "2024"
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Advanced Cardiac Life Support (ACLS)",
+            "startDate": "2025-01",
+            "endDate": "2027-01"
+        },
+        {
+            "name": "Basic Life Support (BLS)",
+            "startDate": "2025-01",
+            "endDate": "2027-01"
+        }
+    ],
+    "publications": [
+        {
+            "name": "Yan J, Zwernemann R, Holmes V, Brosnan A. Ruptured ovarian pregnancy: an important differential for abdominal pain",
+            "publisher": "Health Equity Alliance of Tarrant County Summit 2025",
+            "releaseDate": "2025-09-18",
+            "summary": "Poster presented at: Health Equity Alliance of Tarrant County Summit 2025; September 18 2025; Hurst, Texas."
+        }
+    ],
+    "projects": [
+        {
+            "name": "Master’s Project Presentation",
+            "startDate": "2025-09",
+            "summary": "Presented Master’s Project at local maternal and child health conference"
+        },
+        {
+            "name": "Targeted Access Knowledge and Education (TAKE) on HIV",
+            "startDate": "2024-01",
+            "endDate": "2024-04",
+            "summary": "Created educational flyer for patient education on sexually transmitted infections and presented the flyer at the HSC HIV Symposium; completed HIV curriculum requirements through the National HIV Curriculum"
+        }
+    ],
+    "memberships": [
+        {
+            "name": "Texas Academy of Physician Assistants (TAPA)",
+            "startDate": "2024-08",
+            "endDate": null
+        },
+        {
+            "name": "American Academy of Physician Assistants (AAPA)",
+            "startDate": "2024-12",
+            "endDate": null
+        }
+    ]
+}
