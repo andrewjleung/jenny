@@ -7,8 +7,8 @@
     "education": [
         {
             "institution": "University of North Texas Health Science Center (UNTHSC) – Fort Worth, TX",
-            "area": "Physician Assistant Studies",
-            "studyType": "Master",
+            "area": "Master of Physician Assistant Studies",
+            "studyType": "",
             "endDate": "2026-02-01",
             "score": "3.973",
             "courses": [
@@ -208,49 +208,55 @@
             "startDate": "2024"
         }
     ],
-    "certificates": [
-        {
-            "name": "Advanced Cardiac Life Support (ACLS)",
-            "startDate": "2025-01",
-            "endDate": "2027-01"
-        },
-        {
-            "name": "Basic Life Support (BLS)",
-            "startDate": "2025-01",
-            "endDate": "2027-01"
-        }
-    ],
-    "publications": [
-        {
-            "name": "Yan J, Zwernemann R, Holmes V, Brosnan A. Ruptured ovarian pregnancy: an important differential for abdominal pain",
-            "publisher": "Health Equity Alliance of Tarrant County Summit 2025",
-            "releaseDate": "2025-09-18",
-            "summary": "Poster presented at: Health Equity Alliance of Tarrant County Summit 2025; September 18 2025; Hurst, Texas."
-        }
-    ],
     "projects": [
         {
-            "name": "Master’s Project Presentation",
-            "startDate": "2025-09",
-            "summary": "Presented Master’s Project at local maternal and child health conference"
+            "type": "presentation",
+            "roles": [
+                "author",
+                "presenter"
+            ],
+            "name": "Yan J, Zwernemann R, Holmes V, Brosnan A. Ruptured ovarian pregnancy: an important differential for abdominal pain",
+            "entity": "Health Equity Alliance of Tarrant County Summit 2025, Hurst, TX",
+            "startDate": "2025-09-18",
+            "highlights": [
+                "Presented Master’s Project at local maternal and child health conference"
+            ]
         },
         {
+            "type": "project",
+            "roles": [
+                "contributor"
+            ],
             "name": "Targeted Access Knowledge and Education (TAKE) on HIV",
-            "startDate": "2024-01",
-            "endDate": "2024-04",
-            "summary": "Created educational flyer for patient education on sexually transmitted infections and presented the flyer at the HSC HIV Symposium; completed HIV curriculum requirements through the National HIV Curriculum"
-        }
-    ],
-    "memberships": [
-        {
-            "name": "Texas Academy of Physician Assistants (TAPA)",
-            "startDate": "2024-08",
-            "endDate": null
+            "entity": "UNTHSC, Fort Worth, TX",
+            "startDate": "2024-01-01",
+            "endDate": "2024-04-01",
+            "highlights": [
+                "Created flyer for patient education on sexually transmitted infections and presented at HSC HIV Symposium",
+                "Completed HIV curriculum requirements through the National HIV Curriculum"
+            ]
         },
         {
+            "type": "certification",
+            "name": "Advanced Cardiac Life Support (ACLS)",
+            "startDate": "2025-01-01",
+            "endDate": "2027-01-01"
+        },
+        {
+            "type": "certification",
+            "name": "Basic Life Support (BLS)",
+            "startDate": "2025-01-01",
+            "endDate": "2027-01-01"
+        },
+        {
+            "type": "membership",
+            "name": "Texas Academy of Physician Assistants (TAPA)",
+            "startDate": "2024-08-01"
+        },
+        {
+            "type": "membership",
             "name": "American Academy of Physician Assistants (AAPA)",
-            "startDate": "2024-12",
-            "endDate": null
+            "startDate": "2024-12-01"
         }
     ]
 }
