@@ -1,0 +1,20 @@
+[tasks.render]
+usage = '''
+arg "variant" help="Resume variant to render" default="cv"
+'''
+description = "Render the resume"
+run = "pushd ${usage_variant?} && reze render -c -o ../artifacts -r ../resume.json --template template.typ -t jenny && popd"
+
+[tasks.watch]
+usage = '''
+arg "variant" help="Resume variant to render" default="cv"
+'''
+description = "Render the resume with the file watcher"
+run = "pushd ${usage_variant?} && reze watch -c -o ../artifacts -r ../resume.json --template template.typ -t jenny && popd"
+
+[tasks.config]
+usage = '''
+arg "variant" help="Resume variant to render" default="cv"
+'''
+description = "Output the config file used for this rendering"
+run = "pushd ${usage_variant?} && reze config && popd"
