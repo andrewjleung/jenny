@@ -10,7 +10,7 @@ usage = '''
 arg "variant" help="Resume variant to render" default="cv"
 '''
 description = "Render the resume with the file watcher"
-run = "pushd ${usage_variant?} && reze watch -c -o ../artifacts -r ../resume.json --template template.typ -t jenny && popd"
+run = "pushd ${usage_variant?} && reze watch -c -o ../artifacts -r ../resume.json --template template.typ -t jenny-${usage_variant?} && popd"
 
 [tasks.config]
 usage = '''

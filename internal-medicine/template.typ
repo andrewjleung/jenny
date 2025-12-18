@@ -2,7 +2,7 @@
   #set line(length: 100%, stroke: 0.5pt + black)
   #set list(indent: 0.5em)
   #set page("us-letter", margin: 0.5in)
-  #set par(linebreaks: "simple", leading: 0.8em, spacing: 1.5em)
+  #set par(linebreaks: "simple", leading: 0.8em, spacing: 1.05em)
   #set text(font: "Nimbus Sans L", size: 10pt)
 
   #show heading.where(level: 1): set text(size: 18pt)
@@ -45,15 +45,38 @@
       #box[
         #education.institution \
         #if education.courses.len() > 0 {
-          [Honors: #education.courses.join(", ") ]
-        } \
-        GPA: #education.score \
+          [Honors: #education.courses.join(", "), #education.score GPA]
+        }
       ]
     ]
   }
 
+  #let join-with-linebreaks(container-size, items, sep) = {
+    let sep-width = measure(sep).width
+
+    let lines = ()
+    let line = ()
+    let line-len = 0pt
+
+    for it in items {
+      let item-width = measure(it).width
+      line-len += item-width + sep-width
+      if line-len > container-size.width {
+        lines.push(line.join(sep))
+        line = ()
+        line-len = item-width
+      }
+      line.push(it)
+    }
+    if line.len() > 0 {
+      lines.push(line.join(sep))
+    }
+
+    lines.join("\n")
+  }
+
   #let clincalrotation(cr) = {
-    block[
+    block(breakable: false)[
       #headline(
         cr.position.split(", ").at(1),
         cr.name,
@@ -65,7 +88,7 @@
   }
 
   #let work(w) = {
-    block[
+    block(breakable: false)[
       #headline(
         w.position,
         none,
@@ -80,9 +103,9 @@
     let (entity, city, state) = p.entity.split(", ")
 
     if p.type == "presentation" {
-      let (authors, title) = p.name.split(". ")
+      let (authors, title, tail) = p.name.split(". ")
 
-      block[
+      block(breakable: false)[
         #headline(
           "Presenter",
           none,
@@ -90,12 +113,12 @@
         ) \
         #entity — #city, #state
         #list(
-          [#authors. #emph(title).],
           ..p.highlights,
+          [#authors. #emph(title). #tail],
         )
       ]
     } else {
-      block[
+      block(breakable: false)[
         #headline(
           p.name,
           none,
@@ -109,7 +132,6 @@
 
   #let singleton(item, detail) = {
     list.item([
-
       #box[#pad(right: 0.4em)[#item]]
       #h(1fr)
       #detail
@@ -147,10 +169,41 @@
 
   #line()
 
+  #let sep = h(.5em) + sym.bullet + h(0.5em)
+
+  #v(1em)
+  #align(center)[
+    #layout(size => {
+      join-with-linebreaks(
+        size,
+        resume
+          .work
+          .filter(w => w.position.starts-with("Clinical Rotation"))
+          .map(w => [*#w.position.split(", ").at(1)*]),
+        sep,
+      )
+    })
+  ]
+  #v(1em)
+
+  // Stinky hack
+  #let omit = (
+    "Pulmonary/Sleep Medicine",
+    "Women's Health",
+    "Dermatology",
+    "General Surgery",
+    "Neurology",
+    "Pediatrics",
+  )
+
   #(
     resume
       .work
-      .filter(w => w.position.starts-with("Clinical Rotation"))
+      .filter(w => (
+        w.position.starts-with("Clinical Rotation")
+          and w.name != none
+          and not omit.contains(w.position.split(", ").at(1))
+      ))
       .map(w => clincalrotation(w))
       .join()
   )
@@ -179,28 +232,14 @@
       .join()
   )
 
-  == Licenses & Certifications
-
-  #line()
-
-
-  #(
-    resume
-      .projects
-      .filter(p => p.type == "certification")
-      .map(p => singleton(p.name, monthrange(p.startDate, enddate: p.endDate)))
-      .join()
-  )
-
-
-  == Professional Memberships
+  == Certifications & Professional Memberships
 
   #line()
 
   #(
     resume
       .projects
-      .filter(p => p.type == "membership")
+      .filter(p => p.type == "certification" or p.type == "membership")
       .map(p => singleton(p.name, monthrange(p.startDate, enddate: p.endDate)))
       .join()
   )

@@ -1,0 +1,42 @@
+name: Render resumes
+
+on:
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+env:
+  TITLE: JennyYan_Resume
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: typst-community/setup-typst@v4
+
+      - name: Download Nimbus Sans L
+        run: |
+          wget -O nimbus_sans_l.zip https://www.fontsquirrel.com/fonts/download/nimbus-sans-l
+          unzip -d nimbus_sans_l/ nimbus_sans_l.zip
+          mv nimbus_sans_l /usr/share/fonts/
+          fc-cache -fv
+
+      - name: Create artifact
+        working-directory: ${{ github.workspace }}/cv
+        run: cargo run -- render -c -o ../artifacts -r ../resume.json --template ./template.typ -t $TITLE
