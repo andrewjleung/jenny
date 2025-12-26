@@ -1,0 +1,120 @@
+diff --git a/../resume.json b/./resume.json
+index 4fce0f3..d431987 100644
+--- a/../resume.json
++++ b/./resume.json
+@@ -44,12 +44,12 @@
+     },
+     {
+       "name": "Texas Health Care",
+-      "position": "Clinical Rotation, Women’s Health",
++      "position": "Clinical Rotation, Women's Health",
+       "location": "Fort Worth, TX",
+       "description": "153 hours",
+       "highlights": [
++        "Performed comprehensive Well Woman exams including breast and pelvic exams, STI testing, contraception and preventive health counseling, and routine prenatal care",
+         "Assessed common complaints, including breast mass, abnormal uterine bleeding, dyspareunia, pelvic pain, and perimenopause for a diverse patient population, ranging from young adult to geriatric",
+-        "Counseled patients on gynecologic preventative care during Well Woman exams and on routine prenatal care during obstetrics visits",
+         "Measured fundal height and doppler heart tones, and assisted with in-office procedures (subcutaneous hormone pellet implantation, colposcopy, IUD insertion, LEEP) and surgery (Cesarean section, LAVH)"
+       ]
+     },
+@@ -59,9 +59,9 @@
+       "location": "Fort Worth, TX",
+       "description": "131 hours",
+       "highlights": [
+-        "Constructed treatment plans for patients with schizophrenia and mood disorders in a locked long-term care unit, utilizing findings from extensive chart review, patient interviews, and mental status exams",
++        "Conducted detailed psychiatric assessments, monitored symptom progression, and refined treatment plans for patients with schezophrenia, mood disorders, and personality disorders in a locked long-term care unit",
+         "Evaluated and dispositioned patients in the psychiatric emergency department with chief complaints such as suicidal ideation/attempt, acute psychosis, and acute mania",
+-        "Developed fund of knowledge through self-guided research of neuroleptic malignant syndrome, catatonia, and schizophrenia management"
++        "Developed fund of knowledge through self-guided study of neuroleptic malignant syndrome, catatonia, and schizophrenia management"
+       ]
+     },
+     {
+@@ -70,9 +70,9 @@
+       "location": "Fort Worth, TX",
+       "description": "148 hours",
+       "highlights": [
+-        "Gained exposure to the acute care of critically ill patients in a Level 1 Trauma Center and one of the busiest emergency departments in the country",
++        "Gained exposure to the acute care of critically ill patients in a Level 1 Trauma Center",
+         "Assessed patients with a diverse array of acuity levels (ESI 2 to 4) and chief complaints, including altered mental status, falls and motor vehicle collisions, chest pain, abdominal pain, headache, and back pain",
+-        "Performed and assisted with procedures including laceration repair, splinting, and fascia iliaca nerve block"
++        "Performed and assisted with laceration repair (suturing, stapling), splinting, fascia iliaca nerve block"
+       ]
+     },
+     {
+@@ -102,7 +102,7 @@
+       "location": "Cypress, TX",
+       "description": "162 hours",
+       "highlights": [
+-        "Obtained histories and performed physical exams for up to 13 patients/day in a fast-paced outpatient clinic serving a diverse patient population",
++        "Obtained histories, performed physical exams, and reviewed labs and diagnostic studies for up to 13 patients/day in a fast-paced outpatient clinic serving a diverse patient population",
+         "Educated patients on disease management and prevention, especially emphasizing preventive health screenings and lifestyle modifications for chronic cardiovascular diseases, obesity, and diabetes mellitus"
+       ]
+     },
+@@ -113,17 +113,17 @@
+       "description": "145 hours",
+       "highlights": [
+         "Evaluated common complaints including headache, neuropathy, vestibular disorders, memory loss, and concussion, utilizing findings from comprehensive history-taking and physical exams",
+-        "Observed chemodenervation injections and nerve blocks for the treatment of refractory headaches and neuromuscular disorders"
++        "Observed chemodenervation injections and nerve blocks for refractory headaches and neuromuscular disorders"
+       ]
+     },
+     {
+       "name": "John Peter Smith Hospital",
+-      "position": "Clinical Rotation, Internal Medicine",
++      "position": "Clinical Rotation, Internal Medicine (Inpatient)",
+       "location": "Fort Worth, TX",
+       "description": "154 hours",
+       "highlights": [
+-        "Evaluated and managed up to 3 patients per shift in a diverse, community hospital setting, with complex cases including decompensated cirrhosis, sepsis, acute heart failure, substance use, acute encephalopathy",
+-        "Presented cases in daily rounds to a team of 1 attending physician, 1 senior resident, 2 interns, and 2 medical students"
++        "Managed medical, dietary, mobility, and safety needs for up to 3 patients per shift in a diverse, community hospital setting",
++        "Collaborated with multidisciplinary team to manage complex cases including decompensated cirrhosis, sepsis, acute heart failure, substance use, acute encephalopathy"
+       ]
+     },
+     {
+@@ -137,6 +137,20 @@
+         "Counseled patients on lifestyle interventions and medication management of prevalent cardiac conditions including atrial fibrillation, heart failure, hypertension, hyperlipidemia, coronary artery disease"
+       ]
+     },
++    {
++      "name": "Nacogdoches Pediatrics",
++      "position": "Clinical Rotation, Pediatrics",
++      "location": "Nacogdoches, TX",
++      "description": "97 hours",
++      "highlights": [
++        "Performed Well Child Checks for newborns to adolescents, including monitoring growth and development through precise anthropometric measurements, thorough histories, direct observation, and validated screening tools",
++        "Evaluated and managed acute conditions including respiratory infections and dermatologic conditions"
++      ]
++    },
++    {
++      "position": "Clinical Rotation, Underserved",
++      "location": "Arlington, TX"
++    },
+     {
+       "name": "Center for Academic Performance, UNTHSC",
+       "position": "CAP Tutor",
+@@ -164,8 +178,7 @@
+       "startDate": "2021-04-01",
+       "endDate": "2021-06-01",
+       "highlights": [
+-        "Guided first-year Doctor of Physical Therapy students in identifying anatomical structures of the skull, brain, and spinal cord on models, human cadavers, and images of cross-sectional slices",
+-        "Led virtual recitations in preparation for exams"
++        "Led pre-exam recitations for first-year Doctor of Physical Therapy students and guided labs for identifying anatomical structures of the skull, brain, and spinal cord on models, human cadavers, and images of cross-sectional slices"
+       ]
+     },
+     {
+@@ -215,11 +228,11 @@
+         "author",
+         "presenter"
+       ],
+-      "name": "Yan J, Zwernemann R, Holmes V, Brosnan A. Ruptured ovarian pregnancy: an important differential for abdominal pain",
+-      "entity": "Health Equity Alliance of Tarrant County Summit 2025, Hurst, TX",
++      "name": "HEAL 24th Annual Summit",
++      "entity": "Health Equity Alliance of Tarrant County, Hurst, TX",
+       "startDate": "2025-09-18",
+       "highlights": [
+-        "Presented Master’s Project at local maternal and child health conference"
++        "Presented Master’s Project at local maternal and child health conference: Yan J, Zwernemann R, Holmes V, Brosnan A. _Ruptured ovarian pregnancy: an important differential for abdominal pain_. Poster presented at: Health Equity Alliance of Tarrant County Summit 2025; September 18 2025; Hurst, Texas"
+       ]
+     },
+     {

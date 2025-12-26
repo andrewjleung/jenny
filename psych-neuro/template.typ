@@ -2,7 +2,7 @@
   #set line(length: 100%, stroke: 0.5pt + black)
   #set list(indent: 0.5em)
   #set page("us-letter", margin: 0.5in)
-  #set par(linebreaks: "simple", leading: 0.8em, spacing: 1.05em)
+  #set par(linebreaks: "simple", leading: 1em, spacing: 1.1em)
   #set text(font: "Nimbus Sans L", size: 10pt)
 
   #show heading.where(level: 1): set text(size: 18pt)
@@ -203,7 +203,8 @@
     "Women's Health",
     "Dermatology",
     "General Surgery",
-    "Neurology",
+    "Family Medicine",
+    "Cardiology",
     "Pediatrics",
     "Underserved",
   )
@@ -219,8 +220,6 @@
       .map(w => clincalrotation(w))
       .join()
   )
-
-  #pagebreak()
 
   == Work Experience
 

@@ -34,7 +34,7 @@
     {
       "name": "The Lung and Sleep Center of North Texas",
       "location": "North Richland Hills, TX",
-      "position": "Clinical Rotation, Pulmonary/Sleep Medicine",
+      "position": "Clinical Rotation, Pulmonary/Sleep",
       "description": "130 hours",
       "highlights": [
         "Evaluated and managed common chief complaints such as shortness of breath, chronic cough, pulmonary nodules, and hypersomnia, as well as COPD, asthma, interstitial lung disease, and obstructive sleep apnea",
@@ -59,7 +59,7 @@
       "location": "Fort Worth, TX",
       "description": "131 hours",
       "highlights": [
-        "Conducted detailed psychiatric assessments, monitored symptom progression, and refined treatment plans for patients with schezophrenia, mood disorders, and personality disorders in a locked long-term care unit",
+        "Conducted detailed psychiatric assessments, monitored symptom progression, and refined treatment plans for patients with schizophrenia, mood disorders, and personality disorders in a locked long-term care unit",
         "Evaluated and dispositioned patients in the psychiatric emergency department with chief complaints such as suicidal ideation/attempt, acute psychosis, and acute mania",
         "Developed fund of knowledge through self-guided study of neuroleptic malignant syndrome, catatonia, and schizophrenia management"
       ]
@@ -122,7 +122,7 @@
       "location": "Fort Worth, TX",
       "description": "154 hours",
       "highlights": [
-        "Managed medical, dietary, mobility, and safety needs for up to 3 patients per shift in a diverse, community hospital setting",
+        "Managed medical, dietary, mobility, safety needs for up to 3 patients per shift in a diverse, community hospital setting",
         "Collaborated with multidisciplinary team to manage complex cases including decompensated cirrhosis, sepsis, acute heart failure, substance use, acute encephalopathy"
       ]
     },
@@ -143,11 +143,12 @@
       "location": "Nacogdoches, TX",
       "description": "97 hours",
       "highlights": [
-        "Performed Well Child Checks for newborns to adolescents, including monitoring growth and development through precise anthropometric measurements, thorough histories, direct observation, and validated screening tools",
+        "Performed Well Child Checks for newborns to adolescents, including monitoring growth and development through precise anthropometric measurements, histories and physicals, and validated screening tools",
         "Evaluated and managed acute conditions including respiratory infections and dermatologic conditions"
       ]
     },
     {
+      "name": "",
       "position": "Clinical Rotation, Underserved",
       "location": "Arlington, TX"
     },
@@ -199,8 +200,7 @@
       "startDate": "2019-01-01",
       "endDate": "2019-12-01",
       "highlights": [
-        "Provided basic nursing care for pediatric patients with complex neurological and developmental disorders in a 33-bed inpatient unit, responsible for 6-12 patients per shift",
-        "Monitored patients with behavioral, seizure, fall, and other safety risks as a one-to-one sitter"
+        "Provided basic nursing care for pediatric patients with complex neurological and developmental disorders, responsible for 6-12 patients per shift; monitored patients with behavioral, seizure, fall risks as a one-to-one sitter"
       ]
     }
   ],

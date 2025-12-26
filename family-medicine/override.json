@@ -1,0 +1,79 @@
+{
+  "work": [
+    {
+      "name": "The Lung and Sleep Center of North Texas",
+      "location": "North Richland Hills, TX",
+      "position": "Clinical Rotation, Pulmonary/Sleep",
+      "highlights": [
+        "Evaluated and managed common chief complaints such as shortness of breath, chronic cough, pulmonary nodules, and hypersomnia, as well as COPD, asthma, interstitial lung disease, and obstructive sleep apnea",
+        "Interpreted diagnostic tests including pulmonary function tests, chest CT and radiographs, pleural fluid analysis"
+      ]
+    },
+    {
+      "name": "Texas Health Care",
+      "position": "Clinical Rotation, Women's Health",
+      "location": "Fort Worth, TX",
+      "highlights": [
+        "Performed comprehensive Well Woman exams including breast and pelvic exams, STI testing, contraception and preventive health counseling, and routine prenatal care",
+        "Assessed common complaints, including breast mass, abnormal uterine bleeding, dyspareunia, pelvic pain, and perimenopause for a diverse patient population, ranging from young adult to geriatric",
+        "Performed and assisted with subcutaneous hormone pellet implantation, colposcopy, IUD insertion, LEEP"
+      ]
+    },
+    {
+      "name": "JPS Health",
+      "position": "Clinical Rotation, Psychiatry",
+      "location": "Fort Worth, TX",
+      "highlights": [
+        "Conducted detailed psychiatric assessments, monitored symptom progression, and refined treatment plans for patients with schezophrenia, mood disorders, and personality disorders in a locked long-term care unit",
+        "Evaluated and dispositioned patients in the psychiatric emergency department with chief complaints such as suicidal ideation/attempt, acute psychosis, and acute mania",
+        "Developed fund of knowledge through self-guided study of neuroleptic malignant syndrome, catatonia, and schizophrenia management"
+      ]
+    },
+    {
+      "name": "Texas Health Harris Methodist Hospital",
+      "position": "Clinical Rotation, Emergency Medicine",
+      "location": "Fort Worth, TX",
+      "highlights": [
+        "Gained exposure to the acute care of critically ill patients in a Level 1 Trauma Center",
+        "Assessed patients with a diverse array of acuity levels (ESI 2 to 4) and chief complaints, including altered mental status, falls and motor vehicle collisions, chest pain, abdominal pain, headache, and back pain",
+        "Performed and assisted with laceration repair (suturing, stapling), splinting, fascia iliaca nerve block"
+      ]
+    },
+    {
+      "name": "Creekside Family Practice",
+      "position": "Clinical Rotation, Family Medicine",
+      "location": "Cypress, TX",
+      "highlights": [
+        "Obtained histories, performed physical exams, and reviewed labs and diagnostic studies for up to 13 patients/day in a fast-paced outpatient clinic serving a diverse patient population",
+        "Educated patients on disease management and prevention, especially emphasizing preventive health screenings and lifestyle modifications for chronic cardiovascular diseases, obesity, and diabetes mellitus"
+      ]
+    },
+    {
+      "name": "Center for Neurology and Neurophysiology",
+      "position": "Clinical Rotation, Neurology",
+      "location": "Frisco, TX",
+      "highlights": [
+        "Evaluated common complaints including headache, neuropathy, vestibular disorders, memory loss, and concussion, utilizing findings from comprehensive history-taking and physical exams",
+        "Observed chemodenervation injections and nerve blocks for refractory headaches and neuromuscular disorders"
+      ]
+    },
+    {
+      "name": "Bouvé College of Health Sciences, Northeastern University",
+      "position": "Teaching Assistant",
+      "location": "Boston, MA",
+      "highlights": [
+        "Led pre-exam recitations for first-year Doctor of Physical Therapy students and guided labs for identifying anatomical structures of the skull, brain, and spinal cord on models, human cadavers, and images of cross-sectional slices"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "type": "presentation",
+      "name": "HEAL 24th Annual Summit",
+      "entity": "Health Equity Alliance of Tarrant County, Hurst, TX",
+      "highlights": [
+        "Presented Master’s Project at local maternal and child health conference: Yan J, Zwernemann R, Holmes V, Brosnan A. _Ruptured ovarian pregnancy: an important differential for abdominal pain_. Poster presented at: Health Equity Alliance of Tarrant County Summit 2025; September 18 2025; Hurst, Texas"
+      ]
+    }
+  ]
+}

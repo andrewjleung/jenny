@@ -2,7 +2,7 @@
   #set line(length: 100%, stroke: 0.5pt + black)
   #set list(indent: 0.5em)
   #set page("us-letter", margin: 0.5in)
-  #set par(linebreaks: "simple", leading: 0.8em, spacing: 1.05em)
+  #set par(linebreaks: "simple", leading: 0.7em, spacing: 0.9em)
   #set text(font: "Nimbus Sans L", size: 10pt)
 
   #show heading.where(level: 1): set text(size: 18pt)
@@ -75,19 +75,6 @@
     lines.join("\n")
   }
 
-  #let omit-bullets(position, highlights) = {
-    if position == "Clinical Rotation, Pulmonary/Sleep Medicine" {
-      return highlights.slice(0, -1)
-    } else if position == "Clinical Rotation, Women's Health" {
-      return (
-        ..highlights.slice(0, -1),
-        "Performed and assisted with subcutaneous hormone pellet implantation, colposcopy, IUD insertion, LEEP",
-      )
-    } else {
-      return highlights
-    }
-  }
-
   #let clincalrotation(cr) = {
     block(breakable: false)[
       #headline(
@@ -96,7 +83,7 @@
         detail: cr.at("location", default: none),
         cr.description,
       ) \
-      #list(..omit-bullets(cr.position, cr.highlights))
+      #list(..cr.highlights)
     ]
   }
 
@@ -112,8 +99,16 @@
     ]
   }
 
-  #let italic(line) = {
-    line
+  #let italic(text) = {
+    let items = text.split("_")
+
+    if items.len() != 3 {
+      return text
+    }
+
+    let (before, it, after) = items
+
+    return [#before#emph(it)#after]
   }
 
   #let project(p) = {
@@ -127,9 +122,9 @@
           parse(p.startDate).display("[month repr:short] [year repr:full]"),
         ) \
         #entity — #city, #state
-        #list(
-          ..p.highlights,
-        )
+        #for h in p.highlights [
+          #list.item(italic(h))
+        ]
       ]
     } else {
       block(breakable: false)[
@@ -139,7 +134,9 @@
           monthrange(p.startDate, enddate: p.endDate),
         ) \
         #entity — #city, #state
-        #list(..p.highlights.map(h => italic(h)))
+        #list(
+          ..p.highlights,
+        )
       ]
     }
   }
@@ -205,6 +202,7 @@
     "Psychiatry",
     "Emergency Medicine",
     "General Surgery",
+    "Underserved",
   )
 
   #(
@@ -264,4 +262,77 @@
   // DOCUMENT END
 ]
 
-#template(json(sys.inputs.data_path))
+#let merge-work-items(a, b) = {
+  let result = ()
+
+  for item in a {
+    let match = none
+
+    for other in b {
+      if (
+        other.name == item.name
+          and other.location == item.location
+          and other.position == item.position
+      ) {
+        match = other
+        break
+      }
+    }
+
+    if match != none {
+      item.insert("highlights", match.highlights)
+      result.push(
+        item,
+      )
+    } else {
+      result.push(item)
+    }
+  }
+
+  return result
+}
+
+#let merge-project-items(a, b) = {
+  let result = ()
+
+  for item in a {
+    let match = none
+
+    for other in b {
+      if (
+        other.type == item.type
+          and other.name == item.name
+          and other.entity == item.entity
+      ) {
+        match = other
+        break
+      }
+    }
+
+    if match != none {
+      item.insert("highlights", match.highlights)
+      result.push(
+        item,
+      )
+    } else {
+      result.push(item)
+    }
+  }
+
+  return result
+}
+
+#let resume = json(sys.inputs.data_path)
+#let override = json("/family-medicine/override.json")
+
+#resume.insert("work", merge-work-items(
+  resume.work,
+  override.work,
+))
+
+#resume.insert("projects", merge-project-items(
+  resume.projects,
+  override.projects,
+))
+
+#template(resume)
