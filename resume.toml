@@ -1,0 +1,287 @@
+#:schema ../../resumes/schemas/resume.schema.json
+
+[profile]
+first_name = "Jenny"
+last_name = "Yan"
+
+[contact]
+personal_email = "jen.yan417@gmail.com"
+phone = "973-610-5193"
+
+# education
+
+[[education]]
+institution = "University of North Texas Health Science Center (UNTHSC)"
+kind = "Master of Physician Assistant Studies"
+when = { Range = { start = 2023-09-01, end = 2026-02-01 } }
+location = { CityState = ["Fort Worth", "TX"] }
+score = "3.973"
+highlights = ["Dean's List (2023, 2024)"]
+
+[[education]]
+institution = "Northeastern University"
+kind = "Bachelor of Science"
+area = "Behavioral Neuroscience"
+when = { Range = { start = 2017-09-01, end = 2021-08-01 } }
+location = { CityState = ["Boston", "MA"] }
+score = "3.987"
+highlights = [
+    "Summa Cum laude",
+    "Honors Program",
+    "Northeastern National Merit Scholarship (2017-2021)",
+    "Dean's List (2017-2021)",
+    "Nu Rho Psi National Neuroscience Honor Society"
+]
+
+# clinical rotations
+
+[[experiences]]
+kind = "clinical rotation"
+name = "The Lung and Sleep Center of North Texas"
+context = "Pulmonary/Sleep"
+location = { CityState = ["North Richland Hills", "TX"] }
+summary = "130 hours"
+highlights = [
+    "Evaluated and managed common chief complaints such as shortness of breath, chronic cough, pulmonary nodules, and hypersomnia, as well as COPD, asthma, interstitial lung disease, and obstructive sleep apnea",
+    "Interpreted diagnostic tests including pulmonary function tests, chest CT and radiographs, pleural fluid analysis",
+    "Gained exposure to the management of critically ill and hemodynamically unstable patients requiring mechanical ventilation and vasopressor support in the intensive care unit"
+]
+
+[[experiences]]
+kind = "clinical rotation"
+name = "Texas Health Care"
+context = "Women's Health"
+location = { CityState = ["Fort Worth", "TX"] }
+summary = "153 hours"
+highlights = [
+    "Performed comprehensive Well Woman exams including breast and pelvic exams, STI testing, contraception and preventive health counseling, and routine prenatal care",
+    "Assessed common complaints, including breast mass, abnormal uterine bleeding, dyspareunia, pelvic pain, and perimenopause for a diverse patient population, ranging from young adult to geriatric",
+    "Measured fundal height and doppler heart tones, and assisted with in-office procedures (subcutaneous hormone pellet implantation, colposcopy, IUD insertion, LEEP) and surgery (Cesarean section, LAVH)"
+]
+
+[[experiences]]
+kind = "clinical rotation"
+name = "JPS Health"
+context = "Psychiatry"
+location = { CityState = ["Fort Worth", "TX"] }
+summary = "131 hours"
+highlights = [
+    "Conducted detailed psychiatric assessments, monitored symptom progression, and refined treatment plans for patients with schizophrenia, mood disorders, and personality disorders in a locked long-term care unit",
+    "Evaluated and dispositioned patients in the psychiatric emergency department with chief complaints such as suicidal ideation/attempt, acute psychosis, and acute mania",
+    "Developed fund of knowledge through self-guided study of neuroleptic malignant syndrome, catatonia, and schizophrenia management"
+]
+
+[[experiences]]
+kind = "clinical rotation"
+name = "Texas Health Harris Methodist Hospital"
+context = "Emergency Medicine"
+location = { CityState = ["Fort Worth", "TX"] }
+summary = "148 hours"
+highlights = [
+    "Gained exposure to the acute care of critically ill patients in a Level 1 Trauma Center",
+    "Assessed patients with a diverse array of acuity levels (ESI 2 to 4) and chief complaints, including altered mental status, falls and motor vehicle collisions, chest pain, abdominal pain, headache, and back pain",
+    "Performed and assisted with laceration repair (suturing, stapling), splinting, fascia iliaca nerve block"
+]
+
+[[experiences]]
+kind = "clinical rotation"
+name = "SkinMD"
+context = "Dermatology"
+location = { CityState = ["Weatherford", "TX"] }
+summary = "117 hours"
+highlights = [
+    "Conducted full body skin exams to screen for skin cancer, including use of dermatoscope",
+    "Performed and assisted with cryotherapy, local infiltration, shave biopsy, surgical excision, incision & drainage",
+    "Educated patients regarding wound care, sun protection, and common conditions such as actinic keratoses, seborrheic keratoses, melanocytic nevi, acne, and skin cancer"
+]
+
+[[experiences]]
+kind = "clinical rotation"
+name = "Texas Health Care"
+context = "General Surgery"
+location = { CityState = ["Fort Worth", "TX"] }
+summary = "138 hours"
+highlights = [
+    "Assisted surgeon in robot-assisted, laparoscopic, and open procedures, including closing incisions",
+    "Gained exposure to pre- and post-operative care of patients in the clinic setting, evaluating patients for surgical management of inguinal hernia, ventral/incisional hernia, hiatal hernia, intraabdominal masses, skin and subcutaneous masses, biliary diseases"
+]
+
+[[experiences]]
+kind = "clinical rotation"
+name = "Creekside Family Practice"
+context = "Family Medicine"
+location = { CityState = ["Cypress", "TX"] }
+summary = "162 hours"
+highlights = [
+    "Obtained histories, performed physical exams, and reviewed labs and diagnostic studies for up to 13 patients/day in a fast-paced outpatient clinic serving a diverse patient population",
+    "Educated patients on disease management and prevention, especially emphasizing preventive health screenings and lifestyle modifications for chronic cardiovascular diseases, obesity, and diabetes mellitus"
+]
+
+[[experiences]]
+kind = "clinical rotation"
+name = "Center for Neurology and Neurophysiology"
+context = "Neurology"
+location = { CityState = ["Frisco", "TX"] }
+summary = "145 hours"
+highlights = [
+    "Evaluated common complaints including headache, neuropathy, vestibular disorders, memory loss, and concussion, utilizing findings from comprehensive history-taking and physical exams",
+    "Observed chemodenervation injections and nerve blocks for refractory headaches and neuromuscular disorders"
+]
+
+[[experiences]]
+kind = "clinical rotation"
+name = "John Peter Smith Hospital"
+context = "Internal Medicine (Inpatient)"
+location = { CityState = ["Fort Worth", "TX"] }
+summary = "154 hours"
+highlights = [
+    "Managed medical, dietary, mobility, safety needs for up to 3 patients per shift in a diverse, community hospital setting",
+    "Collaborated with multidisciplinary team to manage complex cases including decompensated cirrhosis, sepsis, acute heart failure, substance use, acute encephalopathy"
+]
+
+[[experiences]]
+kind = "clinical rotation"
+name = "Baylor Scott & White Cardiovascular Consultants"
+context = "Cardiology"
+location = { CityState = ["Roanoke", "TX"] }
+summary = "138 hours"
+highlights = [
+    "Developed skills to manage patients with complex cardiovascular histories, including those with prior PCI or CABG, valve repair, pacemaker, and those requiring anticoagulation, antiarrhythmic drugs",
+    "Gained proficiency in interpreting electrocardiograms",
+    "Counseled patients on lifestyle interventions and medication management of prevalent cardiac conditions including atrial fibrillation, heart failure, hypertension, hyperlipidemia, coronary artery disease"
+]
+
+[[experiences]]
+kind = "clinical rotation"
+name = "Nacogdoches Pediatrics"
+context = "Pediatrics"
+location = { CityState = ["Nacogdoches", "TX"] }
+summary = "97 hours"
+highlights = [
+    "Performed Well Child Checks for newborns to adolescents, including monitoring growth and development through precise anthropometric measurements, histories and physicals, and validated screening tools",
+    "Evaluated and managed acute conditions including respiratory infections and dermatologic conditions"
+]
+
+[[experiences]]
+kind = "clinical rotation"
+name = ""
+context = "Underserved"
+location = { CityState = ["Arlington", "TX"] }
+
+# work
+
+[[experiences]]
+kind = "work"
+name = "CAP Tutor"
+context = "Center for Academic Performance, UNTHSC"
+location = { CityState = ["Fort Worth", "TX"] }
+when = { Started = 2024-11-01 }
+highlights = [
+    "Provided one-to-one tutoring for first- and second-year PA students in Neuroanatomy and Dermatology, emphasizing active learning through teach-back and practice questions"
+]
+
+[[experiences]]
+kind = "work"
+name = "Medical Assistant I, Internal Medicine"
+context = "Atrius Health"
+location = { CityState = ["Boston", "MA"] }
+when = { Range = { start = 2021-07-01, end = 2022-08-01 } }
+highlights = [
+    "Assisted physicians with rooming and intake, seeing up to 25 patients per day in a fast-paced clinic setting",
+    "Performed point-of-care tests including urinalysis, rapid strep, urine pregnancy test, and EKG"
+]
+
+[[experiences]]
+kind = "work"
+name = "Teaching Assistant"
+context = "Bouvé College of Health Sciences, Northeastern University"
+location = { CityState = ["Boston", "MA"] }
+when = { Range = { start = 2021-04-01, end = 2022-06-01 } }
+highlights = [
+    "Led pre-exam recitations for first-year Doctor of Physical Therapy students and guided labs for identifying anatomical structures of the skull, brain, and spinal cord on models, human cadavers, and images of cross-sectional slices"
+]
+
+[[experiences]]
+kind = "work"
+name = "Medical Assistant, Outpatient Clinic"
+context = "Boston Health Care for the Homeless Program"
+location = { CityState = ["Boston", "MA"] }
+when = { Range = { start = 2020-01-01, end = 2021-06-01 } }
+highlights = [
+    "Cared for a diverse patient population, including individuals who were uninsured, non-English speaking, non-citizen status, unhoused, with high burden of psychiatric and substance use disorders",
+    "Monitored patients who were sedated or at risk of overdose"
+]
+
+[[experiences]]
+kind = "work"
+context = "Boston Children’s Hospital"
+name = "Clinical Assistant, Inpatient Neurology/Neurosurgery"
+location = { CityState = ["Boston", "MA"] }
+when = { Range = { start = 2019-01-01, end = 2019-12-01 } }
+highlights = [
+    "Provided basic nursing care for pediatric patients with complex neurological and developmental disorders, responsible for 6-12 patients per shift; monitored patients with behavioral, seizure, fall risks as a one-to-one sitter"
+]
+
+# volunteering
+
+[[experiences]]
+kind = "volunteer"
+name = "Beautiful Feet Ministries Medical Clinic"
+when = { Year = 2024 }
+
+[[experiences]]
+kind = "volunteer"
+name = "Seniors Assisting Geriatric Education (SAGE)"
+when = { Year = 2024 }
+
+[[experiences]]
+kind = "volunteer"
+name = "Black Men in White Coats Youth Summit"
+when = { Year = 2024 }
+
+# projects
+
+[[experiences]]
+kind = "project"
+name = "HEAL 24th Annual Summit"
+context = "Health Equity Alliance of Tarrant County"
+location = { CityState = ["Hurst", "TX"] }
+when = { Date = 2025-09-18 }
+highlights = [
+    "Presented Master’s Project at local maternal and child health conference: Yan J, Zwernemann R, Holmes V, Brosnan A. _Ruptured ovarian pregnancy: an important differential for abdominal pain_. Poster presented at: Health Equity Alliance of Tarrant County Summit 2025; September 18 2025; Hurst, Texas"
+]
+
+[[experiences]]
+kind = "project"
+name = "Targeted Access Knowledge and Education (TAKE) on HIV"
+context = "UNTHSC"
+location = { CityState = ["Fort Worth", "TX"] }
+when = { Range = { start = 2024-01-01, end = 2024-04-01 } }
+highlights = [
+    "Created flyer for patient education on sexually transmitted infections and presented at HSC HIV Symposium",
+    "Completed HIV curriculum requirements through the National HIV Curriculum"
+]
+
+# certifications
+
+[[experiences]]
+kind = "certification"
+name = "Advanced Cardiac Life Support (ACLS)"
+when = { Range = { start = 2025-01-01, end = 2027-01-01 } }
+
+[[experiences]]
+kind = "certification"
+name = "Basic Life Support (BLS)"
+when = { Range = { start = 2025-01-01, end = 2027-01-01 } }
+
+# memberships
+
+[[experiences]]
+kind = "membership"
+name = "Texas Academy of Physician Assistants (TAPA)"
+when = { Started = 2024-08-01 }
+
+[[experiences]]
+kind = "membership"
+name = "American Academy of Physician Assistants (AAPA)"
+when = { Started = 2024-12-01 }
