@@ -1,5 +1,17 @@
-# Pulmonary
-# Women's Health
-# Dermatology
-# General Surgery
-# Neurology
+output_dir = "../artifacts"
+resume_data_path = "../resume.toml"
+title = "jenny-internal-medicine"
+
+[typst]
+template = "../template.typ"
+
+[queries]
+'clinical rotation' = [
+    { HideDetail = "Pulmonary/Sleep" },
+    { HideDetail = "Women's Health" },
+    { HideDetail = "Dermatology" },
+    { HideDetail = "General Surgery" },
+    { HideDetail = "Neurology" },
+    { HideDetail = "Pediatrics" },
+    { HideDetail = "Underserved" },
+]

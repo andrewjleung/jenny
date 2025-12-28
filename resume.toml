@@ -1,5 +1,3 @@
-#:schema ../../resumes/schemas/resume.schema.json
-
 [profile]
 first_name = "Jenny"
 last_name = "Yan"
@@ -13,7 +11,8 @@ phone = "973-610-5193"
 [[education]]
 institution = "University of North Texas Health Science Center (UNTHSC)"
 kind = "Master of Physician Assistant Studies"
-when = { Range = { start = 2023-09-01, end = 2026-02-01 } }
+# when = { Range = { start = 2023-09-01, end = 2026-02-01 } }
+when = { Date = 2026-02-01 }
 location = { CityState = ["Fort Worth", "TX"] }
 score = "3.973"
 highlights = ["Dean's List (2023, 2024)"]
@@ -22,7 +21,8 @@ highlights = ["Dean's List (2023, 2024)"]
 institution = "Northeastern University"
 kind = "Bachelor of Science"
 area = "Behavioral Neuroscience"
-when = { Range = { start = 2017-09-01, end = 2021-08-01 } }
+# when = { Range = { start = 2017-09-01, end = 2021-08-01 } }
+when = { Date = 2021-08-01 }
 location = { CityState = ["Boston", "MA"] }
 score = "3.987"
 highlights = [

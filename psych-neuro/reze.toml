@@ -1,5 +1,18 @@
-# Pulmonary
-# Women's Health
-# Dermatology
-# General Surgery
-# Neurology
+output_dir = "../artifacts"
+resume_data_path = "../resume.toml"
+title = "jenny-psych-neuro"
+
+[typst]
+template = "../template.typ"
+
+[queries]
+'clinical rotation' = [
+    { HideDetail = "Pulmonary/Sleep" },
+    { HideDetail = "Women's Health" },
+    { HideDetail = "Dermatology" },
+    { HideDetail = "General Surgery" },
+    { HideDetail = "Family Medicine" },
+    { HideDetail = "Cardiology" },
+    { HideDetail = "Pediatrics" },
+    { HideDetail = "Underserved" },
+]

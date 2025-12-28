@@ -7,9 +7,11 @@
 
   #show heading.where(level: 1): set text(size: 18pt)
   #show heading.where(level: 2): set block(above: 1.5em)
-
-  #let parse(date) = {
-    datetime(year: date.year, month: date.month, day: date.day)
+  #show heading: it => {
+    let threshold = 10%
+    block(breakable: false, height: threshold)
+    v(-threshold, weak: true)
+    it
   }
 
   #let headline(name, desc, detail: none, timing) = {
@@ -25,11 +27,11 @@
   #let monthrange(startdate, enddate: none) = {
     let format = "[month repr:short] [year repr:full]"
 
-    parse(startdate).display(format)
+    startdate.display(format)
     if enddate == none [
       \- Present
     ] else [
-      \- #parse(enddate).display(format)
+      \- #enddate.display(format)
     ]
   }
 
@@ -62,18 +64,20 @@
       return monthrange(w.Started)
     } else if "Year" in w {
       return w.Year
+    } else if "Date" in w {
+      return w.Date.display("[month repr:short] [year repr:full]")
     }
   }
 
   #let education(education) = {
     block[
       #headline(
-        (education.kind, education.area)
+        (education.kind, education.at("area", default: none))
           .filter(s => s != none and s.len() > 0)
           .join(", "),
         none,
         when(education.when),
-      )
+      ) \
       #box[
         #education.institution \
         #if education.highlights.len() > 0 {
@@ -181,7 +185,7 @@
 
   #align(center)[
     = #resume.profile.first_name #resume.profile.last_name
-    #resume.contact.email | #resume.contact.phone_number
+    #resume.contact.personal_email | #resume.contact.phone
   ]
 
   == Education
@@ -251,7 +255,7 @@
     resume
       .experiences
       .filter(e => e.kind == "certification" or e.kind == "membership")
-      .map(e => singleton(e.name, monthrange(e.startDate, enddate: e.endDate)))
+      .map(e => singleton(e.name, when(e.when)))
       .join()
   )
 
@@ -259,7 +263,13 @@
 
   #line()
 
-  #resume.volunteer.map(v => singleton(v.organization, v.startDate)).join()
+  #(
+    resume
+      .experiences
+      .filter(e => e.kind == "volunteer")
+      .map(e => singleton(e.name, when(e.when)))
+      .join()
+  )
 
   // DOCUMENT END
 ]
