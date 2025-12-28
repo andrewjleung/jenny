@@ -40,6 +40,11 @@ jobs:
 
       - uses: jdx/mise-action@v3
 
+      - uses: baptiste0928/cargo-install@v3
+        with:
+          crate: reze
+          git: https://github.com/andrewjleung/resumes.git
+
       - name: Create artifact
         run: mise run render $VERSION
 
