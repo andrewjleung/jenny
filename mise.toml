@@ -4,9 +4,9 @@ arg "<variant>" help="The resume variant to render" default="primary"
 '''
 description = "Render the resume"
 run = '''
-pushd {{config_root}}/${usage_variant?}
+cd {{config_root}}/${usage_variant?}
 reze render
-popd
+cd {{config_root}}
 '''
 
 [tasks.watch]
