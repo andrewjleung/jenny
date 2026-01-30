@@ -1,8 +1,6 @@
 output_dir = "../artifacts"
 resume_data_path = "../resume.toml"
 title = "jenny-internal-medicine"
-
-[typst]
 template = "../template.typ"
 
 [queries]
