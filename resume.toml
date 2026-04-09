@@ -266,6 +266,11 @@ highlights = [
 
 [[experiences]]
 kind = "certification"
+name = "National Commission on Certification of Physician Assistants (NCCPA)"
+when = { Started = 2026-03-01 }
+
+[[experiences]]
+kind = "certification"
 name = "Advanced Cardiac Life Support (ACLS)"
 when = { Range = { start = 2025-01-01, end = 2027-01-01 } }
 
@@ -273,11 +278,6 @@ when = { Range = { start = 2025-01-01, end = 2027-01-01 } }
 kind = "certification"
 name = "Basic Life Support (BLS)"
 when = { Range = { start = 2025-01-01, end = 2027-01-01 } }
-
-[[experiences]]
-kind = "certification"
-name = "National Commission on Certification of Physician Assistants (NCCPA)"
-when = { Started = 2026-03-01 }
 
 # memberships
 
